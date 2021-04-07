@@ -1,3 +1,8 @@
+package se.edinjakupovic.option;
+
+import se.edinjakupovic.Serializer;
+import se.edinjakupovic.TestObject;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

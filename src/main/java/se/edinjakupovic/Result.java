@@ -1,3 +1,5 @@
+package se.edinjakupovic;
+
 import java.util.Objects;
 
 public class Result {
@@ -68,7 +70,7 @@ public class Result {
 
     @Override
     public String toString() {
-        return "Result{" +
+        return "se.edinjakupovic.Result{" +
                 "implementation='" + implementation + '\'' +
                 ", objectCount=" + objectCount +
                 ", writeDurationMs=" + writeDurationMs +

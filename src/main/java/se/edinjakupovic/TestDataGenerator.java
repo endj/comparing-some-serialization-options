@@ -1,3 +1,5 @@
+package se.edinjakupovic;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Set;
@@ -16,7 +18,7 @@ public final class TestDataGenerator {
                 .collect(Collectors.toSet());
     }
 
-    private static TestObject randomObject(int seq) {
+    public static TestObject randomObject(int seq) {
         TestObject testObject = new TestObject();
         testObject.setA("a".repeat((int) random()));
         testObject.setB("b".repeat((int) random()));

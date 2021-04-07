@@ -1,5 +1,9 @@
+package se.edinjakupovic.option;
+
 import org.nustaq.serialization.FSTObjectInput;
 import org.nustaq.serialization.FSTObjectOutput;
+import se.edinjakupovic.Serializer;
+import se.edinjakupovic.TestObject;
 
 import java.io.File;
 import java.io.FileInputStream;

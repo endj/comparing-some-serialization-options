@@ -1,3 +1,5 @@
+package se.edinjakupovic;
+
 import java.util.Set;
 
 public interface Serializer {
