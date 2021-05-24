@@ -1,4 +1,5 @@
 # Comparing some serialization options
+And testing out some other things. To generate the protobuff code, you need to install the compiler and run ```mvn clean install -P protobuff```
 
 ### Java						
 
@@ -29,4 +30,3 @@
 |readDurationMs|	1|	3|	7|	26|	62|	130|
 |fileSizeBytes|	40450|	201385|	400906|	2005463|	4013132|	6012058|
 |fileSizeKb|	39|	196|	391|	1958|	3919|	5871|
-						

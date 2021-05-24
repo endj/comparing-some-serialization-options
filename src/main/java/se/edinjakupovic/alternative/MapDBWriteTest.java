@@ -43,6 +43,7 @@ public class MapDBWriteTest {
         addData(db, "test2");
         db.commit();
     }
+
     private static void withMmapNoWal() {
         DB db = DBMaker
                 .fileDB(NO_WAL_MMAP)
@@ -51,6 +52,7 @@ public class MapDBWriteTest {
         addData(db, "test3");
         db.commit();
     }
+
     private static void withMmapWal() {
         DB db = DBMaker
                 .fileDB(WAL_MMAP)
@@ -66,7 +68,7 @@ public class MapDBWriteTest {
                 .fileDB(WAL)
                 .transactionEnable()
                 .make();
-        commitTest(db,"test");
+        commitTest(db, "test");
     }
 
     private static void commitWithoutWal() {
@@ -74,21 +76,21 @@ public class MapDBWriteTest {
                 .fileDB(NO_WAL)
                 .transactionEnable()
                 .make();
-        commitTest(db,"test2");
+        commitTest(db, "test2");
     }
 
     private static void commitWithMmapNoWal() {
         DB db = DBMaker
                 .fileDB(NO_WAL_MMAP)
                 .make();
-        commitTest(db,"test3");
+        commitTest(db, "test3");
     }
 
     private static void commitWithMmapWal() {
         DB db = DBMaker
                 .fileDB(WAL_MMAP)
                 .make();
-        commitTest(db,"test4");
+        commitTest(db, "test4");
     }
 
     private static void commitTest(DB db, String name) {
@@ -113,6 +115,6 @@ public class MapDBWriteTest {
         runnable.run();
         long stop = System.nanoTime();
         long duration = TimeUnit.MILLISECONDS.convert(stop - start, TimeUnit.NANOSECONDS);
-        System.out.println("Duration: "+ duration + "ms "+ impl);
+        System.out.println("Duration: " + duration + "ms " + impl);
     }
 }

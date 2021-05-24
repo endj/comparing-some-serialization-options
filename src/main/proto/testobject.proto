@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package se.edinjakupovic;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+
+message TestObjectProto {
+    string a = 1;
+    string b = 2;
+    string c = 3;
+    string d = 4;
+    string e = 5;
+    string f = 6;
+    google.protobuf.Timestamp d1 = 7;
+    google.protobuf.Timestamp d2 = 8;
+    google.protobuf.Timestamp d3 = 9;
+    BigDecimalKinda b1 = 10;
+    BigDecimalKinda b2 = 11;
+    int32 i = 12;
+}
+message BigDecimalKinda {
+    uint32 scale = 1;
+    uint32 precision = 2;
+    bytes value = 3;
+}
